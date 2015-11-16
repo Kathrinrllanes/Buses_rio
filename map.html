@@ -50,7 +50,7 @@
 
 <body>
 
-   <div class="folium-map" id="folium_591036fc3ce9473eb777f1acffb9c7d9" style="width: 100%; height: 100%"></div>
+   <div class="folium-map" id="folium_5a732452708c4c508bba28db0fe91d89" style="width: 100%; height: 100%"></div>
 
    <script>
 
@@ -94,7 +94,7 @@
       /*
       Creates the map and adds the selected layers
       */
-      var map = L.map('folium_591036fc3ce9473eb777f1acffb9c7d9', {
+      var map = L.map('folium_5a732452708c4c508bba28db0fe91d89', {
                                        center:[-22.9499, -43.267262],
                                        zoom: 12,
                                        maxBounds: bounds,
@@ -110,6 +110,24 @@
       //add the clustered markers to the group anyway
       map.addLayer(clusteredmarkers);
 
+      
+      var marker_1_icon = L.AwesomeMarkers.icon({ icon: 'info-sign',markerColor: 'blue',prefix: 'glyphicon',extraClasses: 'fa-rotate-0'});
+      var marker_1 = L.marker([-22.978424, 
+							-43.226245],
+							{'icon':marker_1_icon}
+							);
+      marker_1.bindPopup("Punto1");
+      marker_1._popup.options.maxWidth = 300;
+      map.addLayer(marker_1)
+      
+      var marker_2_icon = L.AwesomeMarkers.icon({ icon: 'info-sign',markerColor: 'blue',prefix: 'glyphicon',extraClasses: 'fa-rotate-0'});
+      var marker_2 = L.marker([-22.992352, 
+							-43.251817],
+							{'icon':marker_2_icon}
+							);
+      marker_2.bindPopup("Punto4");
+      marker_2._popup.options.maxWidth = 300;
+      map.addLayer(marker_2)
       
 
       
@@ -321,7 +339,7 @@
       
       map.addLayer(polygon_16)
       
-      var polygon_17 = new L.RegularPolygonMarker(new L.LatLng(-22.978292, -43.225685), {
+      var polygon_17 = new L.RegularPolygonMarker(new L.LatLng(-22.9919777025, -43.2533240318), {
     color: 'black',
     opacity: 1,
     weight: 2,
@@ -329,291 +347,23 @@
     fillOpacity: 1,
     numberOfSides: 4,
     rotation: 0,
-    radius: 6
+    radius: 8
 });
-      polygon_17.bindPopup("17-08-2015 00:02:16");
-      polygon_17._popup.options.maxWidth = 300;
+      
       map.addLayer(polygon_17)
       
-      var polygon_18 = new L.RegularPolygonMarker(new L.LatLng(-22.992321, -43.250114), {
+      var polygon_18 = new L.RegularPolygonMarker(new L.LatLng(-22.9941900276, -43.252723217), {
     color: 'black',
     opacity: 1,
     weight: 2,
-    fillColor: 'green',
+    fillColor: 'violet',
     fillOpacity: 1,
     numberOfSides: 4,
     rotation: 0,
-    radius: 6
+    radius: 8
 });
-      polygon_18.bindPopup("17-08-2015 00:02:45");
-      polygon_18._popup.options.maxWidth = 300;
+      
       map.addLayer(polygon_18)
-      
-      var polygon_19 = new L.RegularPolygonMarker(new L.LatLng(-22.978914, -43.228752), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_19.bindPopup("17-08-2015 00:03:16");
-      polygon_19._popup.options.maxWidth = 300;
-      map.addLayer(polygon_19)
-      
-      var polygon_20 = new L.RegularPolygonMarker(new L.LatLng(-22.983624, -43.237938), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_20.bindPopup("17-08-2015 00:03:51");
-      polygon_20._popup.options.maxWidth = 300;
-      map.addLayer(polygon_20)
-      
-      var polygon_21 = new L.RegularPolygonMarker(new L.LatLng(-22.982483, -43.235485), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_21.bindPopup("17-08-2015 00:04:17");
-      polygon_21._popup.options.maxWidth = 300;
-      map.addLayer(polygon_21)
-      
-      var polygon_22 = new L.RegularPolygonMarker(new L.LatLng(-22.982937, -43.237251), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_22.bindPopup("17-08-2015 00:04:27");
-      polygon_22._popup.options.maxWidth = 300;
-      map.addLayer(polygon_22)
-      
-      var polygon_23 = new L.RegularPolygonMarker(new L.LatLng(-22.979746, -43.230625), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_23.bindPopup("17-08-2015 00:04:51");
-      polygon_23._popup.options.maxWidth = 300;
-      map.addLayer(polygon_23)
-      
-      var polygon_24 = new L.RegularPolygonMarker(new L.LatLng(-22.99268, -43.249008), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_24.bindPopup("17-08-2015 00:05:46");
-      polygon_24._popup.options.maxWidth = 300;
-      map.addLayer(polygon_24)
-      
-      var polygon_25 = new L.RegularPolygonMarker(new L.LatLng(-22.978518, -43.226646), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_25.bindPopup("17-08-2015 00:05:51");
-      polygon_25._popup.options.maxWidth = 300;
-      map.addLayer(polygon_25)
-      
-      var polygon_26 = new L.RegularPolygonMarker(new L.LatLng(-22.97838, -43.22472), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_26.bindPopup("17-08-2015 00:06:15");
-      polygon_26._popup.options.maxWidth = 300;
-      map.addLayer(polygon_26)
-      
-      var polygon_27 = new L.RegularPolygonMarker(new L.LatLng(-22.992292, -43.251434), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_27.bindPopup("17-08-2015 00:06:17");
-      polygon_27._popup.options.maxWidth = 300;
-      map.addLayer(polygon_27)
-      
-      var polygon_28 = new L.RegularPolygonMarker(new L.LatLng(-22.978346, -43.225399), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_28.bindPopup("17-08-2015 00:06:21");
-      polygon_28._popup.options.maxWidth = 300;
-      map.addLayer(polygon_28)
-      
-      var polygon_29 = new L.RegularPolygonMarker(new L.LatLng(-22.99268, -43.249008), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_29.bindPopup("17-08-2015 00:06:46");
-      polygon_29._popup.options.maxWidth = 300;
-      map.addLayer(polygon_29)
-      
-      var polygon_30 = new L.RegularPolygonMarker(new L.LatLng(-22.992624, -43.248787), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_30.bindPopup("17-08-2015 00:07:03");
-      polygon_30._popup.options.maxWidth = 300;
-      map.addLayer(polygon_30)
-      
-      var polygon_31 = new L.RegularPolygonMarker(new L.LatLng(-22.97995, -43.231178), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_31.bindPopup("17-08-2015 00:07:09");
-      polygon_31._popup.options.maxWidth = 300;
-      map.addLayer(polygon_31)
-      
-      var polygon_32 = new L.RegularPolygonMarker(new L.LatLng(-22.978313, -43.226017), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_32.bindPopup("17-08-2015 00:07:16");
-      polygon_32._popup.options.maxWidth = 300;
-      map.addLayer(polygon_32)
-      
-      var polygon_33 = new L.RegularPolygonMarker(new L.LatLng(-22.979401, -43.22998), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_33.bindPopup("17-08-2015 00:07:46");
-      polygon_33._popup.options.maxWidth = 300;
-      map.addLayer(polygon_33)
-      
-      var polygon_34 = new L.RegularPolygonMarker(new L.LatLng(-22.978508, -43.227257), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_34.bindPopup("17-08-2015 00:08:07");
-      polygon_34._popup.options.maxWidth = 300;
-      map.addLayer(polygon_34)
-      
-      var polygon_35 = new L.RegularPolygonMarker(new L.LatLng(-22.97966, -43.226589), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_35.bindPopup("17-08-2015 00:08:09");
-      polygon_35._popup.options.maxWidth = 300;
-      map.addLayer(polygon_35)
-      
-      var polygon_36 = new L.RegularPolygonMarker(new L.LatLng(-22.978403, -43.224712), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_36.bindPopup("17-08-2015 00:08:12");
-      polygon_36._popup.options.maxWidth = 300;
-      map.addLayer(polygon_36)
-      
-      var polygon_37 = new L.RegularPolygonMarker(new L.LatLng(-22.992624, -43.248787), {
-    color: 'black',
-    opacity: 1,
-    weight: 2,
-    fillColor: 'green',
-    fillOpacity: 1,
-    numberOfSides: 4,
-    rotation: 0,
-    radius: 6
-});
-      polygon_37.bindPopup("17-08-2015 00:08:13");
-      polygon_37._popup.options.maxWidth = 300;
-      map.addLayer(polygon_37)
       
 
       

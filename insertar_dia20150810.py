@@ -23,7 +23,7 @@ db.dados20150810.create_index([("latlon", GEO2D)])
 # In[4]:
 
 #Insert in MongoDb gps data of bus line
-df_20150810 = pd.read_csv('/home/kathrin/Doctorado/bus_rio/Datos_Omnibus/morte_motoqueiro_20150817/20150810.txt', delimiter = ('\t'))
+df_20150810 = pd.read_csv('/media/noel/7EE1-9608/morte_motoqueiro_20150817/20150810.txt', delimiter = ('\t'))
 
 
 # In[5]:
@@ -35,10 +35,10 @@ for row in df_20150810.iterrows():
                          "bus_id":row[1]['bus_id'],
                          "line":row[1]['line'],
                          "latitude": row[1]['latitude'],
-                         "longitude": row [1]['longitude'], 
+                         "longitude": row [1]['longitude'],
                          "speed" : row[1]['speed'],
                          "latlon": [ row[1]['longitude'], row[1]['latitude'] ]
                          }]
-    db.dados20150810.insert_many(df_20150810_file)  
-    
+    db.dados20150810.insert_many(df_20150810_file)
+
 

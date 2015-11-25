@@ -9,7 +9,7 @@ import pymongo
 import json
 import datetime
 from bson.son import SON
-import folium 
+import folium
 import math
 import numpy as np
 from IPython.display import display
@@ -17,7 +17,7 @@ from IPython.display import display
 
 # In[2]:
 
-df_20150817 = pd.read_csv('/home/kathrin/Doctorado/bus_rio/Datos_Omnibus/morte_motoqueiro_20150817/20150817.txt', delimiter = ('\t'))
+df_20150817 = pd.read_csv('/home/noel/20150817.txt', delimiter = ('\t'))
 
 
 #Create a link to MongoDB using MongoClient(The name of new database will be morte_motoquiro_event)
@@ -35,7 +35,7 @@ for row in clean_df_20150817.iterrows():
                          "bus_id":row[1]['bus_id'],
                          "line":row[1]['line'],
                          "latitude": row[1]['latitude'],
-                         "longitude": row [1]['longitude'], 
+                         "longitude": row [1]['longitude'],
                          "speed" : row[1]['speed'],
                          "latlon": [row[1]['longitude'], row[1]['latitude']]
                         }]
